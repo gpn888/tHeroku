@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bebidas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="listado">
+
+        <header class="bs-docs-nav navbar navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button 
+                            aria-controls="bs-navbar" 
+                            aria-expanded="false" 
+                            class="collapsed navbar-toggle" 
+                            data-target="#bs-navbar" 
+                            data-toggle="collapse" 
+                            type="button">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand active" aria-current="true" href="/">GPNA | Admin</a>
+                    </div>
+                    <nav class="collapse navbar-collapse" id="bs-navbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="agregarBebida.html">Agregar Bebidas</a></li>
+                            <li><a href="agregarPlatillo.html">Agregar Platillos</a></li>
+                            <li><a class="active" href="bebidas.html">Bebidas</a></li>
+                            <li><a href="platillos.html">Platillos</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="btn btn-danger" href="" onclick="salir()">Salir</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+    <div class="container">
+
+            <div class="panel panel-primary text-center col-sm-8 col-sm-push-2">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Ver las bebidas subidas</h2>
+                    </div>
+                    <div class="panel-body"> 
+                        <p>De click al button para ver las bebidas</p>
+                        <button class="btn btn-success" onclick="imprimirBebidas()" >Imprimir Bebidas</button>
+                    </div>
+            </div>
+
+            <div class="col-sm-8 col-sm-push-2">
+                    <ul id="lista" class="list-group"><!--veras la lista --></ul>
+            </div>
+
+    </div>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

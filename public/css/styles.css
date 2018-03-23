@@ -1,0 +1,88 @@
+body {
+    font-family: Lato
+}
+
+header {
+    background-color: black;
+    color: #ddd
+}
+header a {
+    color: #ddd;
+    transition: .2s all;
+}
+header a:hover {
+    color: white;
+}
+
+header .navbar-toggle {
+    border-color: white;
+}
+header .navbar-toggle span {
+    background-color: white;
+}
+
+.panel-primary {
+    margin-top: 3rem;
+    padding: 0;
+    border-color: black;
+}
+.panel-primary > .panel-heading {
+    background-color: black;
+    border-color: black;
+}
+.panel-heading h2 {
+    font-size: 24px;
+}
+
+.panel label {
+    margin: 1rem 0 .5rem;
+}
+
+.panel-primary .btn {
+    margin-top: 3.5rem;
+    width: 100%;
+    background-color: gray;
+    border-color: gray;
+    transition: .2s all;
+}
+.panel-primary .btn:hover {
+    background-color: black;
+    border-color: black;
+}
+.listado .panel-primary .btn {
+    margin-top: 1rem;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a.active {
+    color: white;
+    background-color: transparent
+}
+.navbar-nav > li > a.btn {
+    background-color: transparent;
+    border-color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+.navbar-nav > li > a.btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.listado .list-group-item .btn {
+    background-color: gray;
+    width: 100%;
+    float: left;
+    border-color: gray;
+    transition: .2s all;
+}
+.listado .list-group-item .btn:hover {
+    background-color: black;
+    width: 100%;
+    float: left;
+    border-color: black;
+}
+.listado .badge {
+    font-size: 20px;
+}
